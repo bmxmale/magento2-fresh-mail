@@ -93,6 +93,6 @@ class ProcessRequestQueue
 
     private function getCurrentTime(): string
     {
-        return strftime('%Y-%m-%d %H:%M:%S', $this->dateTime->gmtTimestamp());
+        return $this->dateTime->date();
     }
 }
